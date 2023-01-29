@@ -1,26 +1,26 @@
 #!/bin/bash
 
 # =========================================================================================
-# check Workshop--Lumada-Platform directory exists
-# remove Workshop--Lumada-Platform
-# create Workshop-LDOS/directory
-# clone remote git Lumada--Deployment-2.4.1 repository to /installer/Workshop--Lumada-Platform directory
+# check Workshop--Lumada-DataOps directory exists
+# remove existing Workshop--Lumada-DataOps
+# create Workshop--Lumada-DataOps/directory
+# clone remote git Lumada--DataOps-1.5.0 repository to /installer/Workshop--Lumada-DataOps directory
 # copy files over to /etc/ansible/playbooks
 # tidy up directory..
 # dont forget to close and open VSC ..
 #
-# 23/01/2023
+# 29/01/2023
 # =========================================================================================
 
 remoteHost=github.com
 remoteUser=jporeilly
 localUser=installer
-remoteDir=Lumada--Deployment-2.4.1
+remoteDir=Lumada--DataOps-1.5.0
 remoteRepo=https://$remoteHost/$remoteUser/$remoteDir
-localDirW=/home/installer/Workshop--Lumada-Platform
+localDirW=/home/installer/Workshop--Lumada-DataOps
 ansLocal=/etc/ansible
 ansPlaybooks=/etc/ansible/playbooks
-mod_01=$localDirW/01--Docker-Registry
+mod_01=$localDirW/01--Preflight
 mod_02=$localDirW/02--Deploy-Foundry
 
 
